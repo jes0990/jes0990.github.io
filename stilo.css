@@ -74,8 +74,8 @@ h1 {
     display: inline-block;
 }
 
-.flip-container.clicked .flip-card {
-    transform: rotateY(180deg);
+.flip-container:hover .flip-card {
+    transform: rotateY(180deg); /* Cambia la transformación para el hover */
 }
 
 .flip-card {
@@ -138,9 +138,9 @@ h1 {
     background-color: black; /* Mantiene solo la línea negra */
     border: none; /* Elimina bordes adicionales */
 }
+
 a {
     text-decoration: underline; /* Línea debajo de todos los enlaces */
     color: #062022; /* Texto en color específico */
     font-size: 18px;
 }
-
