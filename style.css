@@ -1,0 +1,40 @@
+body {
+    background-image: url('imagenes/7SYH.gif'); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;            /* Hace que el GIF cubra toda la pantalla */
+    background-repeat: no-repeat;      /* Evita que se repita el GIF */
+    background-position: center center; /* Centra el GIF en la pantalla */
+    background-attachment: fixed;      /* El fondo se mantiene fijo al hacer scroll */
+    color: white; /* Texto general en blanco */
+    font-family: 'Tahoma', 'Geneva', 'sans-serif'; /* Mantiene la fuente */
+}
+
+/* Tabla inferior (de datos) con bordes internos y externos */
+table {
+    width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse; /* Asegura que los bordes colapsen correctamente */
+    border: 1px solid white; /* Borde externo de la tabla */
+}
+
+table th, 
+table td {
+    border: 1px solid white; /* Bordes internos de las celdas */
+    text-align: center;
+    padding: 10px;
+    color: white; /* Asegura que el texto sea blanco */
+}
+
+table th {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo para el encabezado */
+}
+
+/* Estilo para los enlaces */
+a {
+    color: lightgreen; /* Cambia el color de los enlaces a verde claro */
+    text-decoration: none; /* Quita el subrayado */
+}
+
+a:hover {
+    text-decoration: underline; /* Agrega subrayado al pasar el ratón */
+    color: yellow; /* Cambia el color al pasar el ratón */
+}
