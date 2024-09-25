@@ -1,0 +1,121 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho y alto total */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo tenga al menos la altura de la ventana */
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    position: fixed; /* Fija el encabezado en la parte superior */
+    top: 0; /* Asegura que esté en la parte superior */
+    width: 100%; /* Asegura que ocupe todo el ancho de la ventana */
+    z-index: 1000; /* Mantiene el encabezado por encima de otros elementos */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #70bfdb;
+}
+
+.logo {
+    height: 50px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #9ff3f4;
+    color: black;
+    padding: 50px;
+    padding-top: 120px; /* Espacio superior para que no se superponga con el encabezado */
+    margin-top: 50px; /* Margen superior para evitar superposición */
+    width: 100%; /* Asegura que el banner ocupe todo el ancho */
+    flex-shrink: 0; /* Evita que el banner se encoja */
+}
+
+.banner-content {
+    max-width: 50%;
+}
+
+.banner-content h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.banner-content p {
+    font-size: 20px;
+}
+
+.banner-image {
+    max-width: 40%;
+}
+
+/* Estilos generales del pie de página */
+footer {
+    background-color: black; /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espaciado interno de 20px */
+    display: flex; /* Usamos Flexbox para alinear los elementos dentro del footer */
+    justify-content: center; /* Centra horizontalmente todo el contenido dentro del footer */
+    align-items: center; /* Centra verticalmente el contenido */
+    margin-top: auto; /* Empuja el pie de página hacia abajo */
+    width: 100%; /* Asegura que el footer ocupe todo el ancho */
+}
+
+.footer-container {
+    width: 100%; /* El contenedor del footer ocupa el 100% del ancho */
+    display: flex; /* Usamos Flexbox para alinear el contenido dentro del contenedor */
+    justify-content: space-between; /* Coloca los elementos a la izquierda y derecha */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+}
+
+/* Estilo específico para el enlace dentro de la sección izquierda */
+.footer-container .left a {
+    color: white; /* Color blanco para el texto del enlace */
+    text-decoration: none; /* Elimina el subrayado del enlace */
+}
+
+/* Cambio de color cuando el cursor pasa sobre el enlace */
+.footer-container .left a:hover {
+    color: #70bfdb; /* Cambia el color del enlace a un azul claro cuando se pasa el cursor */
+}
+
+/* Estilos para la sección de texto centrado */
+.footer-container .center {
+    flex-grow: 1; /* Permite que este contenedor crezca para centrar el texto */
+    text-align: center; /* Asegura que el texto esté centrado dentro de su contenedor */
+    margin: 0; /* Elimina el margen alrededor del texto */
+}
+

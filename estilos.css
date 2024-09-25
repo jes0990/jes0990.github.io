@@ -1,0 +1,81 @@
+/* Fondo degradado para toda la pantalla */
+body {
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    background: linear-gradient(135deg, #d3f1f5, #a1eff9); /* Degradado azul claro */
+    font-family: 'Tahoma', Geneva, sans-serif; /* Fuente personalizada */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+}
+
+/* Estilo para la tabla con fondo de imagen */
+table {
+    width: 800px;
+    height: auto;
+    margin: 0 auto; /* Centra la tabla en la página */
+    border-collapse: collapse;
+    background: linear-gradient(135deg, #c0edf3, #c9f4f9); /* Degradado azul claro */
+    background-size: cover; /* La imagen de fondo cubrirá toda la tabla */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position: center; /* La imagen estará centrada */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra alrededor de
+     la tabla */
+    color: #000000; /* Letras en blanco para mayor contraste */
+}
+
+/* Estilo para las celdas de la tabla */
+td {
+    padding: 15px;
+    font-size: 18px;
+    color: #000000; /* Texto en negro */
+   
+}
+
+/* Estilo para los títulos */
+h1, h2 {
+    color: #030303; /* Texto blanco */
+    text-align: center;
+    margin: 0;
+}
+
+/* Estilo para los enlaces */
+a {
+    text-decoration: none;
+    color: #062022; /* Texto blanco */
+    font-size: 18px;
+}
+
+a:hover {
+    color: #ccc; /* Color más claro al pasar el mouse */
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+   border-radius: 50%; /* Hace la imagen redonda */
+    width: 150px; /* Ajusta el tamaño según tus necesidades */
+    height: 150px; /* Mantiene la forma circular */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin deformarse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra alrededor de la imagen */
+    transition: transform 0.5s, box-shadow 0.5s; /* Transición suave para la transformación */
+}
+
+/* Efecto al pasar el mouse */
+img:hover {
+    transform: rotate(360deg) scale(1.1); /* Rota la imagen 360 grados y la escala ligeramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Incrementa la sombra al hacer hover */
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    table {
+        width: 100%; /* La tabla ocupa todo el ancho de la pantalla */
+    }
+
+    td {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
